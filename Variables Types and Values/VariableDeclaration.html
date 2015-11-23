@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<script language="javascript">
+    var myName = "Gary Woodfine"; //this has global scope
+
+    function nameChange() {
+       var myName = "John Smith";  // this has local scope
+        alert(myName); //WHAT DOES THIS LINE OUTPUT?
+    }
+    nameChange();
+    alert(myName); //WHAT DOES THIS LINE OUTPUT?
+</script>
+</html>
