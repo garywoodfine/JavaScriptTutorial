@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script language="JavaScript">
+
+    /*
+       In this example we'll create function scoped variable that will be accessible to all nested functions
+
+     */
+    function whoseAvailable(type) {
+        var availableResource = "";       //function scoped variable
+        if (type === "brewer") {
+            anyBrewersAvailable();
+        }
+        else if (type == "developer") {
+            anyDevelopersAvailable()
+        }else{
+            availableResource = "No One is available";
+        }
+        function anyBrewersAvailable() {                 // A nested function
+            availableResource = "John Smith - local beer brewer" ;     // We can assign the value to variable
+        }
+
+        function anyDevelopersAvailable() {             // another nested function
+            availableResource = 'Gary Woodfine - freelance software developer';
+        }
+        return availableResource;
+    }
+
+    alert(whoseAvailable("brewer"));
+    alert (whoseAvailable("developer"));
+    alert(whoseAvailable(""));
+
+</script>
+</body>
+</html>
