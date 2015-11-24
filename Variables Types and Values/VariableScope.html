@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<script language="javascript">
+    /*
+       In this example we have declared 2 variables  both have the same name
+       but one has been declared globally and one has been declared within the body of a function
+       one variable will have global scope whilst the other one will have local scope
+    */
+var myName = "Gary Woodfine - Global Freelance Software Developer"; //this has global scope
+
+function nameChange() {
+   var myName = "John Smith - Local beer brewer";  //this variable has local scope
+    alert(myName); // THe alert will display "John Smith"
+}
+nameChange();
+alert(myName); //The alert will display "Gary Woodfine - Global Freelance Software Developer"
+</script>
+</html>
