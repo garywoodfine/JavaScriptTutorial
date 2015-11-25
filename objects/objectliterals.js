@@ -5,14 +5,15 @@ var mynameobject = {"FirstName" : "Gary", "Lastname" : "Woodfine"};   // object 
 
 
 // A complex object containing a another object
-var myblogobject = {
-    "title" : "Javascript Object" ,
-    "Content" : "Blah Blah ",
-    author :{
-        "FirstName" : "Gary",
-        "Lastname" : "Woodfine"
+var myblogobject;
+myblogobject = {
+    "title": "Javascript Object",
+    "Content": "Blah Blah ",
+    author: {
+        "FirstName": "Gary",
+        "Lastname": "Woodfine"
     }
-}
+};
 
 
 // Core  constructor objects
