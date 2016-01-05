@@ -31,9 +31,20 @@ console.log(gary);
 
 console.log(gary.getAvailability());
 
-var jack = Freelancer('Jack Jones', 'South Africa', 5000, false);
+var jack = new Freelancer('Jack Jones', 'South Africa', 5000, false);
 
 console.log(gary);
 console.log(jack);
+
+
+// Add our freelancer objects to an array
+var freelancers = new Array();
+
+freelancers.push(gary);
+freelancers.push(jack)
+
+for(var i=0;i<freelancers.length;i++){
+    console.log(freelancers[i]);
+}
 
 
