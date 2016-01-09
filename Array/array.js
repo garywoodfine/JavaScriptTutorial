@@ -8,7 +8,7 @@
 //changing scope to array folder. i.e.  cd Array
 
 // Import our fibonacci class
-var f = require('../Array/Fibonacci')();
+var f = require('../Array/Fibonacci');
 var fibonacci = new Array();
 
 // Use a simple fibonacci module to create a fibonacci sequence

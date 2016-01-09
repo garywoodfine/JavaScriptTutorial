@@ -22,6 +22,6 @@ var Fibonacci = function(){
         recursive:recursive
 
     }
-};
+}();
 
 module.exports = Fibonacci;
